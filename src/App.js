@@ -32,7 +32,23 @@ function App() {
 
         <section className='skills_sec'>
         <i class="fa-solid fa-angles-down dropdown"></i>
+        <div className='skills-ttl'>
+          <h1>Skills</h1>
+          <span>I am striving to never stop learning and improving</span>
+        </div>
 
+        <div className='skills-side'>
+          <div className='left-skill'>
+          <i class="fa-solid fa-desktop"></i> <br/><br/>
+          <span>WEB DEVELOPMENT</span><br/>
+          HTML·CSS·JS·REACT
+          </div>
+          <div className='right-skill'>
+          <i class="fa-solid fa-desktop"></i> <br/> <br/>
+          <span>WEB DEVELOPMENT</span><br/>
+          HTML·CSS·JS·REACT
+          </div>
+        </div>
         </section>
 
       </body>
