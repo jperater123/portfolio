@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSec = () => {
   return (
-    <div className='hero-content-container'>
+    <div className='hero-content-container fade-in'>
     <div className='title'>DEVELOPER</div>
 
     <div className='content'>

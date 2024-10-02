@@ -8,17 +8,20 @@
   font-family: "IBM Plex Mono", monospace;
   font-weight: 200;
   font-style: normal;
+  
 }
 
 header nav {
   background: #292F36;
-  height: 170px;
+  height: 100px;
   border-bottom: #FFF;
   padding: 0 128px;
   color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
+  
 }
 
 .logo {
@@ -28,6 +31,11 @@ header nav {
 }
 .logo span {
   color: #12F7D6;
+}
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 400;
 }
 
 nav ul {
@@ -43,8 +51,7 @@ nav ul li {
   line-height: 32px; 
 }
 
-nav ul li:hover {
- 
+nav ul li a:hover {
   color: #12F7D6;
   cursor: pointer;
 }
@@ -53,6 +60,7 @@ nav ul li:hover {
   background: #292F36;
   height: 910px;
 }
+
 
 .hero .hero-content-container {
   
@@ -205,27 +213,14 @@ nav ul li:hover {
     
 }
 
-/* responsive  */
-@media (min-width: 320px) and (max-width: 1024px) {
- 
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .hero {
-    max-width: 1024px;
-    background: #292F36;
-    height: 1400px;
-  }
-}
 
 /* about me */
 .aboutMe-container {
-
+  height: 1080px;
   background: #1A1E23;
   z-index: -99;
-  height: 910px;
+  animation: fadeIn 0.5s ease-in-out forwards;
   overflow: hidden;
   
 }
@@ -330,7 +325,7 @@ nav ul li:hover {
 /* Skills */
 .skills_sec {
   position: relative;
-  height: 100vh;
+  height: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,6 +335,7 @@ nav ul li:hover {
   background-color: rgba(26, 30, 35, 0.9);
   background-blend-mode: overlay;
   align-items: center;
+  text-align: center;
   
 }
 
@@ -360,13 +356,14 @@ nav ul li:hover {
   text-align: center;
   line-height: 20px;
   font-weight: 400;
+  
 }
 
 .skills-side {
   display: flex;
-  justify-content: space-between;
   gap: 150px;
   margin-top: 64px;
+  flex-wrap: wrap;
 } 
 .skills-side .left-skill, .skills-side .right-skill {
   width: 228px;
@@ -391,3 +388,198 @@ nav ul li:hover {
   margin-bottom: 8px;
 }
 
+.type-skill {
+  margin-top: 60px;
+}
+.type-skill ul {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+.type-skill ul li{
+  height: 140px;
+  width: 140px;
+  border-radius: 115px;
+  padding: 20px;
+  color: white;
+  list-style: none;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+ 
+}
+.type-skill ul li:first-child{
+  background: #E54F26;
+}
+
+.type-skill ul li:nth-child(2){
+  background: #0C73B8;
+}
+.type-skill ul li:nth-child(3){
+  background: #E7A020;
+}
+.type-skill ul li:nth-child(4){
+  background: #28A9E0;
+}
+.type-skill ul li i{
+  font-size: 70px;
+}
+/* works */
+.works-ttl h1 {
+  color:#12F7D6;
+  text-align: center;
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 28px;
+  text-underline-offset: 20px;
+}
+
+.works-ttl span{
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  
+}
+.works_sec {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/public/img/worksBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(26, 30, 35, 1);
+  background-blend-mode: overlay;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Adjust duration and timing as needed */
+}
+
+/* slide in left */
+/* styles.css */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at original position */
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out forwards; /* Adjust duration and timing as needed */
+}
+
+/* styles.css */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at original position */
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-in-out forwards; /* Adjust duration and timing as needed */
+}
+
+/* floating animation */
+/* styles.css */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back down */
+  }
+}
+
+.float {
+  animation: float 2s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+.float1 {
+  animation: float 2.5s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+/* styles.css */
+@keyframes slideInAndFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Start off-screen above */
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px); /* Move down slightly */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.float3 {
+  animation: slideInAndFloat 1s ease-in-out forwards; /* Adjust duration as needed */
+}
+
+
+/* responsive  */
+/* CP */
+@media (max-width: 480px) {
+  .skills-side {
+    gap: 50px;
+    margin-top: 64px;
+    justify-content: center;
+  } 
+  .skills_sec {
+    height: 1800px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+ 
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    max-width: 1024px;
+    background: #292F36;
+    height: 1400px;
+  }
+
+  
+}

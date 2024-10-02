@@ -3,8 +3,9 @@ import React from 'react'
 const AboutMeSec = () => {
   return (
     <div className='aboutMe'>
-          <i class="fa-solid fa-angles-down dropdown"></i>
-            <div className='aleft'>
+
+          <i class="fa-solid fa-angles-down dropdown float"></i>
+            <div className='aleft slide-in-left'>
               <div className='about-title'>
                 About Me
               </div>
@@ -20,7 +21,7 @@ const AboutMeSec = () => {
               </div>
 
             </div>
-            <div className='aright'>
+            <div className='aright slide-in-right'>
               <img src='/img/aboutMeimg.jfif' alt='img'/>
             </div>
 
