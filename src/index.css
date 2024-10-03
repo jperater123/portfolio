@@ -224,18 +224,7 @@ nav ul li a:hover {
   overflow: hidden;
   
 }
-/* .aboutMe {
-  background-image: url('/public/img/aboutMeBg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 400px;
-  background-color: rgba(26, 30, 35, 0.1);
-  background-blend-mode: overlay;
- 
-} */
+
 .aboutMe {
   position: relative;
   display: flex;
@@ -559,7 +548,7 @@ nav ul li a:hover {
 /* CP */
 @media (max-width: 480px) {
   .skills-side {
-    gap: 50px;
+    /* gap: 50px; */
     margin-top: 64px;
     justify-content: center;
   } 

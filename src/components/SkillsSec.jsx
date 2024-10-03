@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const SkillsSec = () => {
   return (
     <>
-      <div className='skills-ttl fade float3'>
+      <div className='skills-ttl fade float3 sm:gap-50'>
           <h1>Skills</h1>
           <span>I am striving to never stop learning and improving</span>
         </div>

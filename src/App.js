@@ -38,7 +38,7 @@ function App() {
 
          <ul>
           <li><a href='#hero'>Home</a></li>
-          <li><a href='#aboutme'>About Me</a></li>
+          <li><a href='#aboutme'>About</a></li>
           <li><a href='#skills'>Skills</a></li>
           <li>Experience</li>
           <li>--</li>

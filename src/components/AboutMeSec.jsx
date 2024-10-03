@@ -1,6 +1,8 @@
 import React from 'react'
 
 const AboutMeSec = () => {
+  const years_exp = 2;
+
   return (
     <div className='aboutMe'>
 
@@ -13,11 +15,14 @@ const AboutMeSec = () => {
                 
               <span>&lt;p&gt;</span> <br/><br/>
                   <h1>Hello! </h1> <br/>
-                  My name is Sinan and I specialize in web developement that utilizes <span> HTML </span>, <span>CSS </span>, <span>JS </span> , and <span>REACT </span> etc. <br/><br/>
-                  I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving. <br/><br/>
+                  My name is Jasper, I graduate Bachelor of Science in Information Technology in University of Cebu Lapu-lapu and Mandaue. I specialize in web developement that utilizes <span> HTML </span>, <span>CSS </span>, <span>JS </span> , and <span>REACT </span> etc. <br/><br/>
+                  I have <span>{years_exp}+</span> years experience in the industry as a Software and Web Developer.
+                   <br/><br/>
                   When I'm not coding, I usually <span>watch anime </span>, <span>play sports </span> or <span> hang out with friends </span>.<br/><br/>
-                  I like to have my perspective and belief systems challenged so that I see the world through new eyes. <br/><br/>
+                  In the following pages below are my works and Technology Stack used in making those personal projects <br/><br/>
                   <span>&lt;p&gt;</span>
+                  <br/>
+                
               </div>
 
             </div>
