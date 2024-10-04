@@ -9,7 +9,7 @@ const HeroSec = () => {
       <div className='left'>
 
         <div className='details'>
-          <img src='/img/jjp.jpg' alt='img'></img>
+          <img src='/img/avatar.webp' alt='img'></img>
           <p>
             <span>Jasper J</span><br/>
             Full-stack developer

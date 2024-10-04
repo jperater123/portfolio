@@ -6,7 +6,7 @@ const AboutMeSec = () => {
   return (
    
       <>
-          <i className="fa-solid fa-angles-down dropdown float"></i>
+          <i className="fa-solid fa-angles-down dropdown float"><a href='#skills_sec'></a></i>
             <div className='aleft slide-in-left'>
               <div className='about-title'>
                 About Me

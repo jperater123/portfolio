@@ -25,7 +25,7 @@ function App() {
     target: '.skills_sec', 
     root: null, // Use the viewport as the root
     rootMargin: '0px',
-    threshold: 0.2 // Adjust the threshold as needed
+    threshold: 0.1 // Adjust the threshold as needed
   });
   const [isActive, setisActive] = useState(false);
 
@@ -87,7 +87,7 @@ function App() {
         </section>
 
         {/* responsive nav */}
-        <div className='responsive-nav'>
+        <div className='responsive-nav fade-in'>
           <div className='r-nav' onClick={handleNavClick}>
           <i className="fa-solid fa-bars">
             </i>

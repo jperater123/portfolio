@@ -18,6 +18,8 @@ header {
   top: 10px;
   left: 20px;
   display: none;
+  background-color: rgba(26, 30, 35, 0.5);
+  border-radius: 20px;
 }
 .responsive-nav i{
   
@@ -87,12 +89,15 @@ nav ul li a:hover {
 /* body */
 .hero {
   background: #292F36;
-  height: 910px;
+  min-height: 910px;
+  height: auto;
+  padding: 0 20px;
 }
 
 
 .hero .hero-content-container {
-  height: 718px;
+  min-height: 718px;
+  height: auto;
 }
 
 .title {
@@ -128,6 +133,7 @@ nav ul li a:hover {
   border-radius: 64px;
   border: 3px solid #12F7D6;
   margin: 0 auto;
+  object-fit: contain;
 }
 
 .left .details p span {
@@ -250,7 +256,7 @@ nav ul li a:hover {
   z-index: -99;
   animation: fadeIn 0.5s ease-in-out forwards;
   overflow: hidden;
-  
+  padding: 0 20px;
 }
 
 .aboutMe {
@@ -260,6 +266,7 @@ nav ul li a:hover {
   gap: 20px;
   align-content: center;
   height: 100%;
+  
   overflow: hidden; /* Prevents pseudo-element overflow */
 }
 .aboutMe::before {
@@ -302,7 +309,8 @@ nav ul li a:hover {
 .about-content {
   background: #292F36;
   width: auto;
-  height: 377px;
+  height: auto;
+  
   border-radius: 40px;
   padding: 24px 40px;
   color: #FFF;
@@ -342,7 +350,8 @@ nav ul li a:hover {
 /* Skills */
 .skills_sec {
   position: relative;
-  height: 1080px;
+  height: auto;
+  min-height: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,6 +362,7 @@ nav ul li a:hover {
   background-blend-mode: overlay;
   align-items: center;
   text-align: center;
+  padding: 0 20px;
   
 }
 
