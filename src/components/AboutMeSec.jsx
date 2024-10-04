@@ -4,9 +4,9 @@ const AboutMeSec = () => {
   const years_exp = 2;
 
   return (
-    <div className='aboutMe'>
-
-          <i class="fa-solid fa-angles-down dropdown float"></i>
+   
+      <>
+          <i className="fa-solid fa-angles-down dropdown float"></i>
             <div className='aleft slide-in-left'>
               <div className='about-title'>
                 About Me
@@ -29,8 +29,8 @@ const AboutMeSec = () => {
             <div className='aright slide-in-right'>
               <img src='/img/aboutMeimg.jfif' alt='img'/>
             </div>
-
-          </div>
+            </>
+         
   )
 }
 

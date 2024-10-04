@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import AboutMeSec from './components/AboutMeSec';
 import HeroSec from './components/HeroSec';
@@ -10,7 +11,7 @@ function App() {
     target: '.aboutMe-container', 
     root: null, // Use the viewport as the root
     rootMargin: '0px',
-    threshold: 0.4 // Adjust the threshold as needed
+    threshold: 0.2 // Adjust the threshold as needed
   });
 
   const isVisibleHero = useIntersectionObserver({
@@ -26,10 +27,22 @@ function App() {
     rootMargin: '0px',
     threshold: 0.2 // Adjust the threshold as needed
   });
+  const [isActive, setisActive] = useState(false);
+
+  const handleNavClick = (e) => {
+    e.stopPropagation();
+    console.log('sadasd');
+    setisActive(!isActive);
+    
+  };
+
+
 
   return (
     <div className="firstPage">
+       
       <header>
+        
       
         <nav>
           <div className='logo'>
@@ -44,17 +57,24 @@ function App() {
           <li>--</li>
          </ul>
         </nav>
+
+       
+
       </header>
+     
       <div>
+     
         <section className='hero'id='hero'>
           
           {isVisibleHero ? <HeroSec/> : '' }
         </section>
 
         <section className='aboutMe-container' id='aboutme'>
+        <div className='aboutMe'>
           {isVisible ? <AboutMeSec/> : '' }
+        </div>
         </section>
-
+        
         <section className='skills_sec' id='skills'>
         {isVisibleSkill ? <SkillsSec/> : '' }
         </section>
@@ -66,6 +86,22 @@ function App() {
         </div>
         </section>
 
+        {/* responsive nav */}
+        <div className='responsive-nav'>
+          <div className='r-nav' onClick={handleNavClick}>
+          <i className="fa-solid fa-bars">
+            </i>
+          <div className={`r-nav-content ${isActive ? '' : 'hide'}`}>
+            <ul>
+            <li><a href='#hero'>Home</a></li>
+            <li><a href='#aboutme'>About</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li>Experience</li>
+            <li>--</li>
+          </ul>
+          </div>
+          </div>
+        </div>
       </div>
       
     </div>

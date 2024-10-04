@@ -10,6 +10,34 @@
   font-style: normal;
   
 }
+header {
+  position: relative;
+}
+.responsive-nav {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: none;
+}
+.responsive-nav i{
+  
+  font-size: 30px;
+  color: #FFF;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.r-nav-content ul,a {
+  list-style: none;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 header nav {
   background: #292F36;
@@ -20,14 +48,14 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-  
+
 }
 
 .logo {
   font-size: 32px;
   font-weight: 500;
   cursor: pointer;
+  white-space: nowrap;
 }
 .logo span {
   color: #12F7D6;
@@ -55,6 +83,7 @@ nav ul li a:hover {
   color: #12F7D6;
   cursor: pointer;
 }
+
 /* body */
 .hero {
   background: #292F36;
@@ -63,7 +92,6 @@ nav ul li a:hover {
 
 
 .hero .hero-content-container {
-  
   height: 718px;
 }
 
@@ -273,7 +301,7 @@ nav ul li a:hover {
 
 .about-content {
   background: #292F36;
-  width: 800px;
+  width: auto;
   height: 377px;
   border-radius: 40px;
   padding: 24px 40px;
@@ -297,7 +325,7 @@ nav ul li a:hover {
 
 .aright img{
   width: 372px;
-  height: 520px;
+  max-height: 520px;
   border-radius: 16px;
   align-content: center;
   z-index: 99;
@@ -385,10 +413,11 @@ nav ul li a:hover {
   justify-content: center;
   gap: 70px;
   flex-wrap: wrap;
+  flex-basis: 50%
 }
 .type-skill ul li{
-  height: 140px;
-  width: 140px;
+  height: 120px;
+  width: 120px;
   border-radius: 115px;
   padding: 20px;
   color: white;
@@ -545,19 +574,59 @@ nav ul li a:hover {
 
 
 /* responsive  */
-/* CP */
-@media (max-width: 480px) {
+/* CP and small screens */
+@media (max-width: 768px) {
   .skills-side {
-    /* gap: 50px; */
+    gap: 50px;
     margin-top: 64px;
     justify-content: center;
   } 
   .skills_sec {
+    height: 2500px;
+  }
+
+
+
+  .aboutMe {
+    flex-wrap: wrap;
+  
+  }
+
+  .aboutMe-container {
     height: 1800px;
   }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
+  .about-content {
+    width: auto;
+    height: auto;
+    
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    background: #292F36;
+    height: 1700px;
+  }
+  .title {
+    
+    font-size: 60px;
+
+    
+  }
+  header nav {
+    
+    display: none;
+  }
+
+  .responsive-nav {
+    display: block;
+  }
+
+    }
+
+/* @media (min-width: 481px) and (max-width: 768px) {
  
   .content {
     flex-direction: column;
@@ -571,4 +640,4 @@ nav ul li a:hover {
   }
 
   
-}
+} */

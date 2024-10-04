@@ -4,7 +4,7 @@ import React from 'react'
 const SkillsSec = () => {
   return (
     <>
-      <div className='skills-ttl fade float3 sm:gap-50'>
+      <div className='skills-ttl fade float3'>
           <h1>Skills</h1>
           <span>I am striving to never stop learning and improving</span>
         </div>
@@ -28,6 +28,14 @@ const SkillsSec = () => {
             <li className='float1'><i class="fa-brands fa-css3-alt"></i><br/>CSS</li>
             <li className='float'><i class="fa-brands fa-js"></i><br/>JS</li>
             <li className='float1'><i class="fa-brands fa-react"></i><br/>REACT</li>
+          </ul>
+        </div>
+        <div className='type-skill'>
+          <ul>
+            <li className='float1'><i class="fa-solid fa-database"></i><br/>SQL</li>
+            <li className='float'><i class="fa-solid fa-tape"></i><br/>API</li>
+            <li className='float1'><i class="fa-brands fa-node"></i><br/>NODE JS</li>
+            <li className='float'><i class="fa-brands fa-python"></i><br/>PYTHON</li>
           </ul>
         </div>
     </>

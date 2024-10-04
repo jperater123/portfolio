@@ -16,10 +16,10 @@ const HeroSec = () => {
           </p>
 
           <ul>
-            <li><i class="fa-regular fa-envelope"></i>jasperperater@gmail.com</li>
-            <li><i class="fa-solid fa-location-dot"></i>Cebu, Philippines</li>
-            <li><i class="fa-solid fa-suitcase"></i>Full-time / Freelance</li>
-            <li><i class="fa-solid fa-link"></i>https://www.linkedin.com/in/jasper-jay-perater-769648262/</li>
+            <li><i className="fa-regular fa-envelope"></i>jasperperater@gmail.com</li>
+            <li><i className="fa-solid fa-location-dot"></i>Cebu, Philippines</li>
+            <li><i className="fa-solid fa-suitcase"></i>Full-time / Freelance</li>
+            <li><i className="fa-solid fa-link"></i>https://www.linkedin.com/in/jasper-jay-perater-769648262/</li>
           </ul>
 
           <div className='skills'>
@@ -30,7 +30,7 @@ const HeroSec = () => {
           </div>
 
           <div className='csv-btn'>
-            DOWNLOAD CV <i class="fa-regular fa-circle-down"></i>
+            DOWNLOAD CV <i className="fa-regular fa-circle-down"></i>
           </div>
 
         </div>
@@ -53,7 +53,7 @@ const HeroSec = () => {
           <span>&lt;p/&gt;</span>
           </p>
 
-          <span>Let's Talk <i class="fa-regular fa-envelope"></i></span>
+          <span>Let's Talk <i className="fa-regular fa-envelope"></i></span>
         </div>
         <div className='right-con'></div>
       </div>
