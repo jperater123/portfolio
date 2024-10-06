@@ -4,8 +4,30 @@ import AboutMeSec from './components/AboutMeSec';
 import HeroSec from './components/HeroSec';
 import SkillsSec from './components/SkillsSec';
 import useIntersectionObserver from './hooks/useIntersectionObserver';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
+
 
 function App() {
+
+  const SampleCarousel = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true
+    };}
+
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
 
   const isVisible = useIntersectionObserver({
     target: '.aboutMe-container', 
@@ -35,6 +57,8 @@ function App() {
     setisActive(!isActive);
     
   };
+
+  
 
 
 
@@ -84,6 +108,41 @@ function App() {
           <h1>Works</h1>
           <span>I had the pleasure of working with these awesome projects</span>
         </div>
+
+        <div className='works-show'>
+          <Slider {...settings}>
+          <div className='work'>
+          <img src='img/tiktok_project.png' alt='works'/>
+       
+          <div className='showcase'>
+            <span><a href='https://github.com/jperater123/tiktokclone' target="_blank">GITHUB</a></span>
+            <span><a href='https://jperater123.github.io/tiktokclone/' target="_blank">LIVE</a></span>
+          </div>
+
+        </div>
+        <div className='work'>
+          <img src='https://placehold.co/60x120' alt='works'/>
+
+          <div className='showcase'>
+            <span>GITHUB</span>
+            <span>LIVE</span>
+          </div>
+
+        </div>
+        <div className='work'>
+          <img src='https://placehold.co/60x120' alt='works'/>
+
+          <div className='showcase'>
+            <span>GITHUB</span>
+            <span>LIVE</span>
+          </div>
+
+        </div>
+        </Slider>
+
+        </div>
+
+
         </section>
 
         {/* responsive nav */}

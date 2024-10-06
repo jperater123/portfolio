@@ -10,6 +10,9 @@
   font-style: normal;
   
 }
+.firstPage {
+  max-width: auto;
+}
 header {
   position: relative;
 }
@@ -475,7 +478,6 @@ nav ul li a:hover {
 }
 .works_sec {
   position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -486,9 +488,53 @@ nav ul li a:hover {
   background-blend-mode: overlay;
   align-items: center;
   text-align: center;
+  height: 1080px;
+}
+.works-show {
+  margin-top: 50px;
+  max-height: 700px;
+  max-width: 600px;
+
+}
+.works-show .work {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width:800px;
+}
+.work img {
+  height: 400px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 20px auto;
+
+}
+
+.showcase {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   
 }
 
+.showcase span {
+  border: 1px solid #12F7D6;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.showcase span:hover {
+  background-color: #FFF;
+  color: #1A1E23;
+}
 
 
 /* ANIMATIONS */
