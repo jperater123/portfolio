@@ -112,6 +112,7 @@ function App() {
         <div className='works-show'>
           <Slider {...settings}>
           <div className='work'>
+          <h2>TikTok Clone</h2>
           <img src='img/tiktok_project.png' alt='works'/>
        
           <div className='showcase'>
@@ -121,7 +122,8 @@ function App() {
 
         </div>
         <div className='work'>
-          <img src='https://placehold.co/60x120' alt='works'/>
+        <h2>Movie Lists IMDB API</h2>
+          <img src='img/imdb.png' alt='works'/>
 
           <div className='showcase'>
             <span>GITHUB</span>

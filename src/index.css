@@ -513,6 +513,10 @@ nav ul li a:hover {
   margin: 20px auto;
 
 }
+.work h2 {
+  font-weight: 400;
+  color: #FFF;
+}
 
 .showcase {
   display: flex;
