@@ -33,7 +33,7 @@ header {
 .hide {
   display: none;
 }
-.r-nav-content ul,a {
+.r-nav-content ul, .r-nav-content ul a {
   list-style: none;
   color: #FFF;
   text-decoration: none;
