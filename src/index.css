@@ -804,6 +804,10 @@ nav ul li a:hover {
     height: 850px;
   }
 
+  .message_me {
+    font-size: 20px;
+  }
+
     }
 
 /* @media (min-width: 481px) and (max-width: 768px) {
