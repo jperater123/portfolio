@@ -30,7 +30,7 @@ const HeroSec = () => {
           </div>
 
           <div className='csv-btn'>
-            DOWNLOAD CV <i className="fa-regular fa-circle-down"></i>
+            <a href='/Jperater-Resume.pdf' download={"Jperater-Resume.pdf"} >DOWNLOAD CV</a> <i className="fa-regular fa-circle-down"></i>
           </div>
 
         </div>

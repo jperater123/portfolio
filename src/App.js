@@ -77,8 +77,8 @@ function App() {
           <li><a href='#hero'>Home</a></li>
           <li><a href='#aboutme'>About</a></li>
           <li><a href='#skills'>Skills</a></li>
-          <li>Experience</li>
-          <li>--</li>
+          <li><a href='#works'>Works</a></li>
+       
          </ul>
         </nav>
 
@@ -103,10 +103,10 @@ function App() {
         {isVisibleSkill ? <SkillsSec/> : '' }
         </section>
         
-        <section className='works_sec'>
+        <section className='works_sec' id='works'>
         <div className='works-ttl fade float3'>
           <h1>Works</h1>
-          <span>I had the pleasure of working with these awesome projects</span>
+          <span>I had the pleasure of working with these personal awesome projects &gt;&gt;</span>
         </div>
 
         <div className='works-show'>
@@ -126,17 +126,18 @@ function App() {
           <img src='img/imdb.png' alt='works'/>
 
           <div className='showcase'>
-            <span>GITHUB</span>
-            <span>LIVE</span>
+          <span><a href='https://github.com/jperater123/react-movie' target="_blank">GITHUB</a></span>
+            <span><a href='https://jperater123.github.io/react-movie/' target="_blank">LIVE</a></span>
           </div>
 
         </div>
         <div className='work'>
-          <img src='https://placehold.co/60x120' alt='works'/>
+        <h2>WEATHER APP</h2>
+          <img src='img/weather.png.avif' alt='works'/>
 
           <div className='showcase'>
-            <span>GITHUB</span>
-            <span>LIVE</span>
+          <span><a href='https://github.com/jperater123/weather_app' target="_blank">GITHUB</a></span>
+            <span><a href='https://weather-app-9rwk.vercel.app/' target="_blank">LIVE</a></span>
           </div>
 
         </div>
@@ -146,6 +147,40 @@ function App() {
 
 
         </section>
+
+        {/* last sec */}
+        <section className='socials'>
+          <div className='social_container'>
+            <div className='socials-ttl fade float3'>
+            <h1>Contact</h1>
+            <span>I’m currently available for freelance/part-time/full-time work</span>
+            
+            </div>
+
+            <div className='message_me'>
+              <a href='#hero'>Send me a message</a>
+            </div>
+
+            <div className='footer'>
+              <div className='small-icons'>
+              <a href='https://www.facebook.com/jasperjay.perater/' target="_blank"><i className="fa-brands fa-facebook"></i></a>
+              <a href='https://www.linkedin.com/in/jasper-jay-perater-769648262/' target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+              <a href='https://github.com/jperater123' target="_blank"><i className="fa-brands fa-github"></i></a>
+              </div>
+
+              <div className='copyright'>
+                <p>© 2024 JPERATER. All rights reserved.</p>
+                <p>Privacy Policy</p>
+                <p>Terms and Conditions</p>
+              </div>
+            
+            </div>
+
+
+          </div>
+        </section>
+
+
 
         {/* responsive nav */}
         <div className='responsive-nav fade-in'>
@@ -157,8 +192,8 @@ function App() {
             <li><a href='#hero'>Home</a></li>
             <li><a href='#aboutme'>About</a></li>
             <li><a href='#skills'>Skills</a></li>
-            <li>Experience</li>
-            <li>--</li>
+            <li><a href='#works'>Works</a></li>
+         
           </ul>
           </div>
           </div>

@@ -42,6 +42,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
 }
 
 header nav {
@@ -167,12 +168,17 @@ nav ul li a:hover {
 .left .details ul li{
   font-size: 14px;
   font-weight: 400;
+  display: flex;
+  cursor: pointer;
 }
 
 .left .details ul li i{
   color:#12F7D6;
   margin-right: 10px;
+  
 }
+
+
 
 .skills {
   display: flex;
@@ -195,20 +201,33 @@ nav ul li a:hover {
   height: 46px;
   width: 200px;
   background: #FFF;
-  color: #292F36;
   border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #292F36;
+}
+.details .csv-btn a{
+  color: #292F36;
   text-align: center;
   align-content: center;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0 auto;
-  cursor: pointer;
+  
 }
 .details .csv-btn:hover {
   color: #FFF;
   background: #292F36;
   border: 1px solid #12F7D6;
+}
+.details .csv-btn a:hover {
+  color: #FFF;
 }
 
 .right {
@@ -295,7 +314,7 @@ nav ul li a:hover {
   z-index: 99;
 }
 .about-title {
-  width: 367px;
+  max-width: 367px;
   height: 104px;
   border-top-left-radius:40px ;
   border-bottom-right-radius: 40px;
@@ -489,6 +508,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   height: 1080px;
+  padding: 0 10px;
 }
 .works-show {
   margin-top: 50px;
@@ -507,7 +527,7 @@ nav ul li a:hover {
 }
 .work img {
   height: 400px;
-  width: 250px;
+  width: 350px;
   object-fit: cover;
   border-radius: 20px;
   margin: 20px auto;
@@ -539,6 +559,102 @@ nav ul li a:hover {
   background-color: #FFF;
   color: #1A1E23;
 }
+
+/* socials */
+.socials {
+  height: 1080px;
+  background: #1A1E23;
+  padding: 20px 10px;
+}
+
+.social_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.socials-ttl h1 {
+  color:#12F7D6;
+  text-align: center;
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 28px;
+  text-underline-offset: 20px;
+}
+
+.socials-ttl span{
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.social_container .message_me {
+  padding: 20px;
+  height: 74px;
+  
+  border: 2px solid #12F7D6;
+  border-top-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  align-content: center;
+  margin: 70px 0;
+  cursor: pointer;
+}
+.social_container .message_me a{
+  
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: #12F7D6;
+  
+
+  
+}
+
+.footer {
+  border-top: 1px solid #43454D;
+  width: auto;
+  position: absolute;
+  bottom: 20px;
+}
+.footer .small-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  color:#12F7D6;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 30px 0;
+
+}
+
+.footer .small-icons a{
+  
+
+  color:#12F7D6;
+  font-size: 32px;
+ 
+
+}
+
+.footer .copyright {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
 
 
 /* ANIMATIONS */
@@ -682,6 +798,10 @@ nav ul li a:hover {
 
   .responsive-nav {
     display: block;
+  }
+
+  .socials {
+    height: 850px;
   }
 
     }
