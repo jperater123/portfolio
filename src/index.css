@@ -209,7 +209,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  
   color: #292F36;
 }
 .details .csv-btn a{
