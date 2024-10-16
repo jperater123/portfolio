@@ -493,7 +493,12 @@ nav ul li a:hover {
   text-align: center;
   line-height: 20px;
   font-weight: 400;
-  
+}
+
+.work a {
+  color: #FFF;
+  font-weight: 400;
+  text-decoration: none;
 }
 .works_sec {
   position: relative;
@@ -557,6 +562,10 @@ nav ul li a:hover {
 
 .showcase span:hover {
   background-color: #FFF;
+  color: #1A1E23;
+}
+.showcase span:hover a {
+  
   color: #1A1E23;
 }
 
