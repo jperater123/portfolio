@@ -132,6 +132,17 @@ function App() {
 
         </div>
         <div className='work'>
+        <h2>Job Tracking APP</h2>
+          <img src='img/job_tracker.jpeg' alt='works'/>
+
+          <div className='showcase'>
+          <span><a href='https://github.com/jperater123/job_tracker' target="_blank">GITHUB</a></span>
+            <span><a href='https://job-tracker-delta-livid.vercel.app' target="_blank">LIVE</a></span>
+          </div>
+
+        </div>
+
+        <div className='work'>
         <h2>WEATHER APP</h2>
           <img src='img/weather.png.avif' alt='works'/>
 
