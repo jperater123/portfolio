@@ -152,6 +152,16 @@ function App() {
           </div>
 
         </div>
+        <div className='work'>
+        <h2>CHATBOT - API</h2>
+          <img src='img/chatbot.jpg' alt='works'/>
+
+          <div className='showcase'>
+          <span><a href='https://github.com/jperater123/Chatbot' target="_blank">GITHUB</a></span>
+            <span><a href='https://chatbot-pi-seven-95.vercel.app' target="_blank">LIVE</a></span>
+          </div>
+
+        </div>
         </Slider>
 
         </div>
